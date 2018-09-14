@@ -4,7 +4,10 @@
   "description": "TravelApp webapplication",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "start": "node server",
+    "build": "rimraf dist && webpack --config ./webpack.config.js --progress --profile --colors",
+    "eslint": "eslint ."
   },
   "repository": {
     "type": "git",
