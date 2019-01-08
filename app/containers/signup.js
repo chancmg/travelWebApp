@@ -1,6 +1,6 @@
 import React from 'react';
 import SignUp from '../components/signup.js';
 const SignupPage = () => {
-    return ( < SignUp / > );
+    return ( <SignUp/> );
 };
 export default SignupPage;

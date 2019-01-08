@@ -17,6 +17,7 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/travelAppDev/travelapp_webapp#readme",
   "dependencies": {
+    "crypto-js": "^3.1.9-1",
     "file-loader": "^0.9.0",
     "jquery": "^3.2.1",
     "lodash": "^4.17.4",

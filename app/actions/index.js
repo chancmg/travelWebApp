@@ -46,7 +46,6 @@ export function setLoginPending(isLoginPending) {
     return {
         type: types.SET_LOGIN_PENDING,
         isLoginPending
-
     };
 }
 export function setSignUpPending(isPending) {
@@ -509,6 +508,45 @@ export function uploadAtp(file) {
                     dispatch(uploadSuccess(false));
                 }, 5000);
             }
+        });
+    };
+}
+
+/**
+ *
+ * Login Endpoint call Action
+ *
+ * @param {userId,rawPassPhrase} options
+ */
+export function travelLogin(options) {
+    return dispatch => {
+        dispatch(setLoginPending(true));
+        dispatch(setLoginSuccess(false));
+        dispatch(setLoginError(null));
+        $.ajax({
+            type: 'POST',
+            url: 'http://159.65.151.187/taumservice/login/',
+            data: options,
+            headers: {'loginLoc': 'Chennai'}
+        })
+        .done(function(response) {
+            if(response.responseHeader.responseCode === 400) {
+                Auth.authenticateUser(response.userDetails);
+                dispatch(setLoginSuccess(true));
+               /**
+                * Do other Actions
+                *
+                *
+                *  browserHistory.push('/app/');
+                */
+            }else{
+                console.log('Error', response.errors);
+                dispatch(setLoginError(response.responseHeader.responseMessage));
+            }
+        })
+        .fail(function(error) {
+            console.log('Error ajax', error);
+            dispatch(setLoginError(error));
         });
     };
 }

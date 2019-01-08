@@ -1,15 +1,15 @@
 class Auth {
     static authenticateUser(token) {
-        sessionStorage.setItem('token', token);
+        sessionStorage.setItem('userDetails', token);
     }
     static isUserAuthenticated() {
-        return sessionStorage.getItem('token') !== null;
+        return sessionStorage.getItem('userDetails') !== null;
     }
     static deauthenticateUser() {
-        sessionStorage.removeItem('token');
+        sessionStorage.removeItem('userDetails');
     }
     static getToken() {
-        return sessionStorage.getItem('token');
+        return sessionStorage.getItem('userDetails');
     }
  }
 export default Auth;
