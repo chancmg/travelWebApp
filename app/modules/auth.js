@@ -1,15 +1,18 @@
 class Auth {
-    static authenticateUser(token) {
-        sessionStorage.setItem('userDetails', token);
-    }
-    static isUserAuthenticated() {
-        return sessionStorage.getItem('userDetails') !== null;
-    }
-    static deauthenticateUser() {
-        sessionStorage.removeItem('userDetails');
-    }
-    static getToken() {
-        return sessionStorage.getItem('userDetails');
-    }
- }
+  static authenticateUser(token) {
+    localStorage.setItem('currentUser', token);
+  }
+
+  static isUserAuthenticated() {
+    return localStorage.getItem('currentUser') !== null;
+  }
+
+  static deauthenticateUser() {
+    localStorage.removeItem('currentUser');
+  }
+
+  static getToken() {
+    return localStorage.getItem('currentUser');
+  }
+}
 export default Auth;

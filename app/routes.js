@@ -1,9 +1,8 @@
 import React from 'react';
-import {
-    Route,
-} from 'react-router';
+import { Route, IndexRoute } from 'react-router';
 import Signup from './containers/signup';
-import Dashboard from './containers/dashboard';
+import Dashboard from './components/dashboard';
+import Home from './containers/home';
 // import Auth from './modules/auth';
 
 // let rchange = (err, replace) => {
@@ -21,7 +20,9 @@ import Dashboard from './containers/dashboard';
 //     replace('/app/login');
 //     browserHistory.push('/app/login');
 // };
-export default ( [<Route path = "/app" component = {Dashboard}/>,
-                <Route path="/app/login" component={Signup} />
-                ]
-);
+export default [
+  <Route path="/app" component={Dashboard}>
+    <IndexRoute component={Home} />
+  </Route>,
+  <Route path="/app/login" component={Signup} />,
+];

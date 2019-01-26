@@ -1,24 +1,50 @@
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-
-  .signin-main {
-    flex: 1 0 auto;
-  }
-
-  body {
-    background: -moz-linear-gradient(290deg, rgba(0,110,125,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,110,125,1)), color-stop(100%, rgba(0,128,128,1))); /* safari4+,chrome */
-    background: -webkit-linear-gradient(290deg, rgba(0,110,125,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
-    background: -o-linear-gradient(290deg, rgba(0,110,125,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
-    background: -ms-linear-gradient(290deg, rgba(0,110,125,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
-    background: linear-gradient(160deg, rgba(0,110,125,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e7d', endColorstr='#008080',GradientType=0 ); /* ie6-9 */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-.appWrapper{
+.signin-main {
+  flex: 1 0 auto;
+}
+
+body {
+  background: -moz-linear-gradient(
+    290deg,
+    rgba(0, 110, 125, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  ); /* ff3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(0, 110, 125, 1)),
+    color-stop(100%, rgba(0, 128, 128, 1))
+  ); /* safari4+,chrome */
+  background: -webkit-linear-gradient(
+    290deg,
+    rgba(0, 110, 125, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  ); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(
+    290deg,
+    rgba(0, 110, 125, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  ); /* opera 11.10+ */
+  background: -ms-linear-gradient(
+    290deg,
+    rgba(0, 110, 125, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  ); /* ie10+ */
+  background: linear-gradient(
+    160deg,
+    rgba(0, 110, 125, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  ); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e7d', endColorstr='#008080',GradientType=0 ); /* ie6-9 */
+}
+
+.appWrapper {
   min-height: 100vh;
   background: #eee;
 }
@@ -26,39 +52,133 @@ body {
 .sideNav {
   min-height: 100vh !important;
   /* background: #2d3e4f; */
-  background: -moz-linear-gradient(290deg, rgba(0,110,125,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,110,125,1)), color-stop(100%, rgba(0,128,128,1))); /* safari4+,chrome */
-background: -webkit-linear-gradient(290deg, rgba(0,110,125,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
-background: -o-linear-gradient(290deg, rgba(0,110,125,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
-background: -ms-linear-gradient(290deg, rgba(0,110,125,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
-background: linear-gradient(160deg, rgba(0,110,125,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e7d', endColorstr='#008080',GradientType=0 ); /* ie6-9 */
+  background: -moz-linear-gradient(
+    290deg,
+    rgba(0, 110, 125, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  ); /* ff3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(0, 110, 125, 1)),
+    color-stop(100%, rgba(0, 128, 128, 1))
+  ); /* safari4+,chrome */
+  background: -webkit-linear-gradient(
+    290deg,
+    rgba(0, 110, 125, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  ); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(
+    290deg,
+    rgba(0, 110, 125, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  ); /* opera 11.10+ */
+  background: -ms-linear-gradient(
+    290deg,
+    rgba(0, 110, 125, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  ); /* ie10+ */
+  background: linear-gradient(
+    160deg,
+    rgba(0, 110, 125, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  ); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e7d', endColorstr='#008080',GradientType=0 ); /* ie6-9 */
   color: #fff;
 }
-.contentWrapper{
+.contentWrapper {
   min-height: 100vh;
 }
-.appNameContainer{
+.appNameContainer {
   display: flex;
   align-items: center;
 }
-  
 
-  .loginbox{
-    display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;
-  }
+.loginbox {
+  display: inline-block;
+  padding: 32px 48px 0px 48px;
+  border: 1px solid #eee;
+}
 
-  .input-field input[type=date]:focus + label,
-  .input-field input[type=text]:focus + label,
-  .input-field input[type=email]:focus + label,
-  .input-field input[type=password]:focus + label {
-    color: #e91e63;
-  }
+.input-field input[type="date"]:focus + label,
+.input-field input[type="text"]:focus + label,
+.input-field input[type="email"]:focus + label,
+.input-field input[type="password"]:focus + label {
+  color: #e91e63;
+}
 
-  .input-field input[type=date]:focus,
-  .input-field input[type=text]:focus,
-  .input-field input[type=email]:focus,
-  .input-field input[type=password]:focus {
-    border-bottom: 2px solid #e91e63;
-    box-shadow: none;
-  }
+.input-field input[type="date"]:focus,
+.input-field input[type="text"]:focus,
+.input-field input[type="email"]:focus,
+.input-field input[type="password"]:focus {
+  border-bottom: 2px solid #e91e63;
+  box-shadow: none;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  width: 210px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.item {
+  overflow: hidden;
+}
+.menu-header {
+  display: block;
+  padding: 16px 0px;
+  /* background: #3498db; */
+  color: #fff;
+  position: relative;
+}
+.menu-header:before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  /* background: #3498db; */
+  left: 28px;
+  bottom: -7px;
+  transform: rotate(45deg);
+}
+.menu-header i {
+  margin-right: 10px;
+}
+
+.smenu {
+  /* background: #333333; */
+  overflow: hidden;
+  transition: max-height 0.3s;
+  max-height: 0;
+}
+.smenu button {
+  display: block;
+  padding: 16px 26px;
+  color: white;
+  font-size: 14px;
+  margin: 4px 0;
+  position: relative;
+}
+
+.smenu button:before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 80%;
+  background: #ffffff;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+.smenu button:hover:before {
+  opacity: 1;
+}
+
+.item:hover .smenu {
+  max-height: 10em;
+}
